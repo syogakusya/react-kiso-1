@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import '../style/CreateNewThread.css'
 export const CreateNewThread = () => {
   const [title, setTitle] = useState("");
 
@@ -24,11 +25,15 @@ export const CreateNewThread = () => {
     setTitle("");
   }
   return(
-    <div>
-      <p>スレッド新規作成</p>
-      <input type="text" value={title} placeholder ="スレッドタイトル" onChange={(event) => setTitle(event.target.value)}></input>
-      <Link to='/'>Topに戻る</Link>
-      <button onClick={postNewThread}>作成</button>
+    <div className="thread__form">
+      <p className="thread__new">スレッド新規作成</p>
+      <br />
+      <input className="thread__input" type="text" value={title} placeholder ="スレッドタイトル" onChange={(event) => setTitle(event.target.value)}></input>
+      <br />
+      <div className="thread__flex">
+        <Link className="thread__to__top" to='/'>Topに戻る</Link>
+        <button className="thread__button" onClick={postNewThread}>作成</button>
+      </div>
     </div>
   )
 }

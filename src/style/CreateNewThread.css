@@ -1,0 +1,33 @@
+.thread__form {
+  text-align: center;
+}
+
+.thread__new {
+  font-size: 36px;
+  width: 400px;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+}
+
+.thread__input {
+  font-size: 20px;
+  width: 360px;
+  padding: 18px 10px;
+  margin: 40px 20px 40px 20px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.thread__to__top {
+  margin-right: 100px;
+}
+
+.thread__button {
+  margin-left: 100px;
+  padding: 6px 30px;
+  background-color: #62f59f;
+  border-radius: 5px;
+  color: #fff;
+  border: 1px transparent;
+}
