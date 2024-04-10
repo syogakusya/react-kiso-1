@@ -1,0 +1,23 @@
+.header__table {
+  margin: 0%;
+  padding: 1%;
+  background-color: #70f764;
+  position: sticky;
+  top: 0px;
+  width: 100vmax;
+  height: 80px;
+  display: flex;
+  word-wrap: break-word;
+  justify-content: space-between;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 32px;
+  margin: auto auto auto 32px;
+  text-decoration: none;
+}
+
+.link__createThread {
+  margin: auto 32px auto auto;
+}
