@@ -6,13 +6,15 @@ import { CreateNewThread } from './components/CreateNewThread';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element ={<Threads />}/>
-        <Route path="/thread/new" element={<CreateNewThread />}/>
-      </Routes>
-    </Router>
+    <div>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element ={<Threads />}/>
+          <Route path="/thread/new" element={<CreateNewThread />}/>
+        </Routes>
+      </Router>
+    </div>
   )
 }
 
