@@ -28,12 +28,12 @@ export const Threads = () =>{
     <div className='threads'>
       <p className='thread__head'>新着スレッド</p>
       <ul className='thread__ul'>
-        {threads.map((thread, key) => (
-          <Link to = {"/thread/" + key} className='link'>
-            <li className='thread__li' key={key}>
-              {thread['title']}
-            </li>
-          </Link>
+        {threads.map((threads, index) => (
+          <li className='thread__li' key={index}>
+            <Link to = {"/thread/" + threads['id']} className='link' >
+              {threads['title']}
+            </Link>
+          </li>
           ))}
       </ul>
     </div>
