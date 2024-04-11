@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import { Link, useParams } from 'react-router-dom';
 import '../style/Threads.css'
 
 export const Threads = () =>{
@@ -17,17 +18,22 @@ export const Threads = () =>{
     .then(threads_ =>{
       console.log(threads_);
       setThreads(threads_.map(thread_ => {
-        return thread_['title']
+        return thread_
       }))
     })
   }
+
 
   return(
     <div className='threads'>
       <p className='thread__head'>新着スレッド</p>
       <ul className='thread__ul'>
         {threads.map((thread, key) => (
-            <li className='thread__li' key={key}>{thread}</li>
+          <Link to = {"/thread/" + key} className='link'>
+            <li className='thread__li' key={key}>
+              {thread['title']}
+            </li>
+          </Link>
           ))}
       </ul>
     </div>

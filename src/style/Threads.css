@@ -22,3 +22,8 @@
   font-size: 2em;
   margin-bottom: 0;
 }
+
+.link {
+  text-decoration: none;
+  color: black;
+}
