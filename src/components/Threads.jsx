@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../style/Threads.css'
 
 export const Threads = () =>{
@@ -29,11 +29,11 @@ export const Threads = () =>{
       <p className='thread__head'>新着スレッド</p>
       <ul className='thread__ul'>
         {threads.map((threads, index) => (
-          <li className='thread__li' key={index}>
-            <Link to = {"/thread/" + threads['id']} className='link' >
-              {threads['title']}
-            </Link>
-          </li>
+          <Link to = {"/thread/" + threads['id']} className='link'  key={index}>
+            <li className='thread__li'>
+                {threads['title']}
+            </li>
+          </Link>
           ))}
       </ul>
     </div>

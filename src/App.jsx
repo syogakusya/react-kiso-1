@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Threads } from './components/Threads';
 import { CreateNewThread } from './components/CreateNewThread';
-import { Thread } from ' ./components/Thread';
+import { Thread } from './components/Thread';
 
 function App() {
   return (
